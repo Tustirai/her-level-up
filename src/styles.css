@@ -1,0 +1,11 @@
+.container {
+    width: 600px;
+}
+.checklist {
+    padding: 5px;
+    display: block;
+    margin: 0 auto;
+}
+.affirm {
+    text-align: center;
+}
