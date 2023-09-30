@@ -1,11 +1,25 @@
-.container {
-    width: 600px;
+:root {
+    --primary-color: #f1d6d5; /* use double dash for custom properties */
+    --accent-color: #dbbd60;
 }
+
+.container {
+    max-width: 600px; /* use max-width instead of width */
+    margin: 0 auto; /* center the container */
+}
+
 .checklist {
     padding: 5px;
-    display: block;
-    margin: 0 auto;
+    display: flex; /* use flexbox to align the contents */
+    justify-content: center; /* center the contents horizontally */
+    align-items: center; /* center the contents vertically */
 }
+
 .affirm {
     text-align: center;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    border: var(--primary-color) double 5px;
+
+    padding: 20px;
 }
