@@ -45,3 +45,32 @@ function getAffirmation(response) {
     return affirmations[challengeDay[currentDay]]; // Return the affirmation for the current day
 }
 getAffirmation();
+
+const tweetButton = document.getElementById("tweetThisAffirm");
+
+tweetButton.addEventListener("click", () => {
+    const affirmation = document.getElementById("newAffirmation").textContent;
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(
+        affirmation + " #HerLevelUp"
+    )}`;
+    window.open(twitterUrl, "_blank");
+});
+
+const shareButton = document.getElementById("whatsappThisAffirm");
+
+shareButton.addEventListener("click", () => {
+    const affirmation = document.getElementById("newAffirmation").textContent;
+    const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(
+        affirmation + " #HerLevelUp"
+    )}`;
+    window.open(whatsappUrl, "_blank");
+});
+
+const heartIcon = document.getElementById("heartIcon");
+
+heartIcon.addEventListener("click", () => {
+    heartIcon.classList.add("jump", "color-change");
+    setTimeout(() => {
+        heartIcon.classList.remove("jump", "color-change");
+    }, 500);
+});

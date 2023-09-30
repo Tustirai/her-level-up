@@ -23,3 +23,23 @@
 
     padding: 20px;
 }
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.jump {
+    animation: jump 0.5s;
+}
+
+.color-change {
+    color: red !important;
+    transition: color 0.5s;
+}
