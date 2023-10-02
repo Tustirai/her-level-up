@@ -4,22 +4,18 @@
 }
 
 .container {
-	display: flex;
-	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 }
 .checklist {
-	padding: 5px;
+	padding: 10px;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	margin: 10px;
 }
 
 .affirm {
 	text-align: center;
 	margin-top: 80px;
-	margin-bottom: 100px;
 	border: var(--primary-color) double 5px;
 	padding: 20px;
 }
@@ -64,8 +60,4 @@
 footer {
 	display: block;
 	text-align: center;
-}
-.daily-task {
-	display: block;
-	margin-left: 50px;
 }
