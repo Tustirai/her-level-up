@@ -34,15 +34,19 @@ function getAffirmation(response) {
 	};
 
 	let challengeDay = [
-		1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-		21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
+		0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+		20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
 	];
 
-	let currentDay = new Date().getDate(); // Get the current day of the month
+	let currentDay = new Date().getDate();
 
-	document.querySelector("h1").innerHTML =
-		affirmations[challengeDay[currentDay]];
-	return affirmations[challengeDay[currentDay]]; // Return the affirmation for the current day
+	let affirmation = affirmations[challengeDay[currentDay]];
+	document.querySelector("h1").innerHTML = affirmation;
+	document.querySelector(
+		"#challengeDay"
+	).innerHTML = `Day: ${challengeDay[currentDay]}`;
+
+	return affirmation;
 }
 getAffirmation();
 

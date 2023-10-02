@@ -61,3 +61,22 @@ footer {
 	display: block;
 	text-align: center;
 }
+#dailyToDo {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+}
+#butterfly-change-image {
+	animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+#dailyToDo input[type="checkbox"]:checked {
+	accent-color: var(--primary-color);
+}
