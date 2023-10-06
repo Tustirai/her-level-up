@@ -45,6 +45,23 @@
 	top: 0.1rem;
 	margin-right: 0.2rem;
 }
+.listOfSignUp {
+	list-style: none;
+	padding-left: 0;
+}
+
+.listOfSignUp li::before {
+	content: "";
+	background-image: url("images/Her Level Up Logo-2.svg");
+	background-size: contain;
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	position: relative;
+	top: 0.1rem;
+	margin-right: 0.2rem;
+}
+
 @keyframes jump {
 	0% {
 		transform: translateY(0);
@@ -105,4 +122,58 @@ footer {
 }
 #dailyToDo input[type="checkbox"]:checked {
 	accent-color: var(--primary-color);
+}
+.home-newsletter {
+	padding: 50px 0;
+	background-color: var(--primary-color);
+}
+
+.home-newsletter .single {
+	max-width: 650px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+}
+
+.home-newsletter .single h2 {
+	font-size: 28px;
+	color: white;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+
+.home-newsletter .single form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.home-newsletter .single label {
+	color: white;
+	margin-bottom: 10px;
+}
+
+.home-newsletter .single .form-control {
+	height: 50px;
+	background: white;
+	border-color: transparent;
+	border-radius: 20px 0 0 20px;
+	padding: 10px;
+}
+
+.home-newsletter .single .form-control:focus {
+	box-shadow: none;
+	border-color: #243c4f;
+}
+
+.home-newsletter .single .btn {
+	min-height: 50px;
+	border-radius: 0 20px 20px 0;
+	background: var(--accent-color);
+	color: #fff;
+	padding: 10px 20px;
+}
+.challengeIcons {
+	text-align: center;
 }
