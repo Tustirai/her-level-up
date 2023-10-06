@@ -19,6 +19,32 @@
 	border: var(--primary-color) double 5px;
 	padding: 20px;
 }
+.devotion {
+	text-align: justify;
+	margin-top: 10px;
+	border: var(--primary-color) double 5px;
+	padding: 20px;
+	white-space: pre-line;
+	word-spacing: 2px;
+	letter-spacing: 0.5px;
+	line-height: 1.5;
+}
+.listOfAffirm {
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+.listOfAffirm::before {
+	content: "";
+	background-image: url("images/Her\ Level\ Up\ Logo-2.svg");
+	background-size: contain;
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	position: relative;
+	top: 0.1rem;
+	margin-right: 0.2rem;
+}
 @keyframes jump {
 	0% {
 		transform: translateY(0);
