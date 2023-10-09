@@ -262,13 +262,11 @@ footer {
 	color: var(--accent-color);
 	background: var(--primary-color);
 	font: var(--heading-font);
-	font-size: 24px;
-	/* increase font size */
 	font-weight: 600;
+	font-size: 20px;
 	line-height: 36px;
-	/* increase line height */
+	margin: 15px;
 	padding: 16px 28px;
-	/* increase padding */
 	text-align: center;
 	transition-duration: 0.15s;
 	transition-property: all;
@@ -279,6 +277,14 @@ footer {
 	background: #e2aaad;
 	transform: scale(1.1);
 	box-shadow: 0 0 20px 5px #ffb6c1;
+
+}
+
+.button-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(7, 1fr);
+	gap: 10px;
 }
 
 #butterfly-change-image {
