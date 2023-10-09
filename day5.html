@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Her level Up - Day Challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Gabriela&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=Petit+Formal+Script&display=swap"
+        rel="stylesheet">
+    <link href="/her-level-up/src/styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/892d83b71f.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+
+                <img class="d-flex img-fluid" src="/her-level-up/src/images/Her Level Up Logo.svg"
+                    alt=" Her-level-up-logo" title="Her-level-up-logo" width="200" height="50">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/her-level-up/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/her-level-up/challenge.html">The Challenge</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-6">
+
+                <div class="daily-task" id="dailyToDo">
+                    <fieldset>
+                        <legend id="challengeDay">Day 5</legend>
+
+                        <div class="checklist">
+                            <input type="checkbox" id="devotion" name="devotion" />
+                            <label for="devotion">Devotion</label>
+                        </div>
+                        <div class="checklist">
+                            <input type="checkbox" id="affirmations" name="affirmations" />
+                            <label for="affirmations">Affirmations</label>
+                        </div>
+                        <div class="checklist">
+                            <input type="checkbox" id="selfcare" name="selfcare" />
+                            <label for="selfcare">Selfcare/Make up</label>
+                        </div>
+                        <div class="checklist">
+                            <input type="checkbox" id="water" name="water" />
+                            <label for="water">Drink 1.5 Liters of water</label>
+                        </div>
+                        <div class="checklist">
+                            <input type="checkbox" id="workout" name="workout" />
+                            <label for="workout">Workout</label>
+                        </div>
+                        <div class="checklist">
+                            <input type="checkbox" id="journal" name="journal" />
+                            <label for="journal">Journal</label>
+                        </div>
+                        <div class="checklist">
+                            <input type="checkbox" id="photo" name="photo" />
+                            <label for="photo">Take a photo</label>
+                        </div>
+                    </fieldset>
+
+                </div>
+            </div>
+            <div class="col-6">
+                <img id="butterflyImg" src="" alt="Random butterfly image" class="img-fluid d-none d-sm-block"
+                    width="400px">
+
+            </div>
+
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col">
+                    <div class="affirm">
+                        <h1 id="newAffirmation"></h1>
+
+                    </div>
+                </div>
+                <div class="socialIcons d-flex justify-content-center align-items-center space-evenly">
+                    <i class="fab fa-twitter fa-2xl" style="color: #dbbd60;" id="tweetThisAffirm"></i>
+                    <i class="fab fa-whatsapp fa-2xl" style="color: #dbbd60;" id="whatsappThisAffirm"></i>
+                    <i id="heartIcon" class="fas fa-heart fa-2xl" style="color: #dbbd60;"></i>
+                </div>
+                <br>
+            </div>
+
+            <div class="dailyDevotion">
+                <div class="col">
+                    <div class="devotion">
+                        <h2>Today's Devotion:</h2>
+                        <p>
+                            As we go through life, we may feel the need to prove ourselves to others, to make ourselves
+                            more lovable. However, we
+                            must remember that our heavenly Father's love for us is boundless and unconditional. </p>
+                        <div class="verse">Romans 8:35-39 says, 'Can anything ever separate us from Christ's love? Does
+                            it mean he no longer loves us if we have trouble or calamity, or
+                            are persecuted, or hungry, or destitute, or in danger, or threatened with death? No, despite
+                            all these things,
+                            overwhelming victory is ours through Christ, who loved us. And I am convinced that nothing
+                            can ever separate us from
+                            God's love. Neither death nor life, neither angels nor demons, neither our fears for today
+                            nor our worries about
+                            tomorrow—not even the powers of hell can separate us from God's love. No power in the sky
+                            above or in the earth
+                            below—indeed, nothing in all creation will ever be able to separate us from the love of God
+                            that is revealed in Christ
+                            Jesus our Lord.' </div>
+                        <br>
+                        <p>We don't need to prove ourselves to anyone, for we are already perfectly loved by our Father
+                            in heaven. Spend some time
+                            thanking Him for His great love and rest in the assurance that nothing can ever separate us
+                            from His love.</p>
+                        <br>
+                        <img class="d-flex mx-auto img-fluid" src="/her-level-up/src/images/Her Level Up Logo-2.svg"
+                            alt=" Her-level-up-logo" title="Her-level-up-logo" width="80" height="50">
+                    </div>
+                </div>
+                <br>
+
+
+
+
+                <div id="video-section" class="embed-responsive embed-responsive-16by9">
+                    <video autoplay muted loop class="embed-responsive-item">
+                        <source src="/her-level-up/src/images/Rose Petals.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <footer>
+                    <small>
+                        This website was coded by Audrey Huvaya and is <a class="linkHighlight"
+                            href="https://github.com/Tustirai/her-level-up" target="_blank"
+                            title="link to Github repository">open-sourced</a>
+                    </small>
+                </footer>
+            </div>
+            <script src="/her-level-up/src/script.js"></script>
+</body>
+
+
+</html>
