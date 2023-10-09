@@ -310,3 +310,17 @@ a:visited {
 a:link {
 	text-decoration: none;
 }
+
+a:not(.navbar-nav a) {
+	animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+	from {
+		transform: translateY(0);
+	}
+
+	to {
+		transform: translateY(-10px);
+	}
+}
