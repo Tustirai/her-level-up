@@ -179,7 +179,7 @@ footer {
 	align-items: left;
 }
 
-#butterfly-change-image {
+#butterflyImg {
 	animation: fadeIn 5s;
 }
 
@@ -277,7 +277,12 @@ footer {
 	background: #e2aaad;
 	transform: scale(1.1);
 	box-shadow: 0 0 20px 5px #ffb6c1;
+}
 
+#challengeDay {
+	color: var(--primary-color);
+	font-weight: bolder;
+	font-size: 40px;
 }
 
 .button-grid {
@@ -287,22 +292,14 @@ footer {
 	gap: 10px;
 }
 
-#butterfly-change-image {
+#butterflyImg {
 	border-radius: 10px;
 	box-shadow: 0 0 20px 5px #ffb6c1;
 }
 
 #video-section {
 	height: 3cm;
-	width: 170vw;
-	overflow: auto;
-}
-
-#video-section video {
-
-	transform: translate(-50%, -50%);
-	min-width: 100%;
-	min-height: 100%;
+	overflow: hidden;
 }
 
 a {
