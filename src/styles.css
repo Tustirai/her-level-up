@@ -1,8 +1,10 @@
 :root {
 	--primary-color: #f1d6d5;
 	--accent-color: #dbbd60;
-	--body-font: "Cormorant Garamond", serif;
-	--heading-font: "Gabriela", serif;
+	--body-font: "Manrope",
+		sans-serif;
+	--heading-font: "Dancing Script",
+		cursive;
 }
 
 body {
