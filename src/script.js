@@ -55,7 +55,7 @@ function getAffirmation() {
 		affirmationsList += `<li class="listOfAffirm">${affirmations[index]}</li>`;
 	});
 
-	document.querySelector("h1").innerHTML = affirmationsList;
+	document.querySelector("#newAffirmation").innerHTML = affirmationsList;
 }
 
 function showChallenge(day) {

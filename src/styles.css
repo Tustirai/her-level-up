@@ -3,24 +3,34 @@
 	--accent-color: #dbbd60;
 	--body-font: "Manrope",
 		sans-serif;
-	--heading-font: "Dancing Script",
-		cursive;
+	--heading-font: "Dancing Script", cursive;
 }
 
 body {
 	font: var(--body-font);
+
 }
 
 h1,
 h2,
 h3,
-h4 {
-	font: var(--heading-font);
+h4,
+#challengeDay,
+.ChallengeDayButton {
+	font-family: var(--heading-font);
+	font-size: 28px;
 }
+
+
 
 .container {
 	justify-content: center;
 	align-items: center;
+}
+
+p,
+li {
+	font-size: 24px;
 }
 
 .button {
@@ -48,6 +58,14 @@ h4 {
 	margin: 0 auto;
 	width: 100%;
 	text-align: center;
+
+}
+
+.challengeButton .button {
+	font-size: 30px;
+	font-family: var(--heading-font);
+
+
 }
 
 .checklist {
@@ -64,11 +82,15 @@ h4 {
 	}
 
 	.listOfAffirm {
-		font-size: 10px;
+		font-size: 15px;
 	}
 
 	.devotion {
-		font-size: 10px;
+		font-size: 15px;
+	}
+
+	p {
+		font-size: 15px;
 	}
 }
 
@@ -179,6 +201,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	align-items: left;
+	font-size: 24px;
 }
 
 #butterflyImg {
@@ -253,6 +276,7 @@ footer {
 
 .challengeIcons {
 	text-align: center;
+	font-size: 23px;
 }
 
 .ChallengeDayButton {
@@ -328,4 +352,21 @@ a:not(.navbar-nav a) {
 	to {
 		transform: translateY(-10px);
 	}
+}
+
+.carousel-item {
+	height: 400px;
+	width: auto;
+}
+
+.carousel-item>img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.carousel-inner {
+	border: var(--primary-color) double 5px;
+	padding: 20px;
+
 }
