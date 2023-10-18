@@ -120,9 +120,12 @@ checkboxes.forEach((checkbox) => {
 	});
 });
 const images = [
-	"src/images/butterfly-perched.jpg",
-	"src/images/flowers.jpg",
-	"src/images/monarch-butterfly.jpg",
+	"src/images/selfCare.jpg",
+	"src/images/Pretty flatlay.jpg",
+	"src/images/white desk.jpg",
+	"src/images/magic pursit.jpg",
+	"src/images/desktop.jpg",
+	"src/images/just live.jpg",
 ];
 const randomIndex = Math.floor(Math.random() * images.length);
 const img = document.querySelector("#butterflyImg");
