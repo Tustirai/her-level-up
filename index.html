@@ -12,13 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Manrope&display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/listjs/2.3.1/list.min.js"></script>
-  <script src="https://kit.fontawesome.com/892d83b71f.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/src/styles.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -27,6 +21,7 @@
 
 <body>
   <div class="container">
+
     <nav class="navbar navbar-expand-md">
       <div class="container-fluid">
         <img class="d-flex img-fluid" src="/src/images/Her Level Up Logo.svg" alt="Her-level-up-logo"
@@ -43,134 +38,58 @@
             <li class="nav-item">
               <a class="nav-link" href="/challenge.html">The Challenge</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
-    <div class="container-lg my-3">
-      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
 
+    <br>
 
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block  img-fluid " src="/src/images/diary.jpg" alt="diary" title="diary">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100 img-fluid h-100" src="/src/images/fitness.jpg" alt="Pretty flatlay with flowers"
-              title="Pretty flatlay with flowerst">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100 img-fluid h-100" src="/src/images/journal.jpg" alt="journal" title="journal">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100 img-fluid h-100" src="/src/images/Spring-Beauty-Picks.png" alt="makeup-products"
-              title="makeup-products">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100 img-fluid h-100" src="/src/images/makeup products.jpg" alt="pink-outwork-outfit"
-              title="pink-outwork-outfit">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100 img-fluid h-100" src="/src/images/makeup-brushes.jpg" alt="makeup-brushes"
-              title="makeup-brushes">
-          </div>
-        </div>
-
-
-        <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </a>
-
-      </div>
-    </div>
-    <h1 class="text-center">
+    <h1 class="text-center d-none d-sm-block">
       <img src="/src/images/Her Level Up Logo.svg" alt="Her-level-up-logo" title="Her-level-up-logo"
         class="img-fluid mx-auto d-flex align-items-center" width="300px">
     </h1>
 
+    <section class="hero">
+      <img class="img-fluid hero rounded " src="/src/images/woman-tea.jpg" alt="woman in white robe drinking tea">
+      <div class="hero-overlay"></div>
+    </section>
+
     <div class="challengeButton">
       <a href="/challenge.html" class="button"> Go to Challenge </a>
     </div>
-
-    <br>
     <br>
 
-    <div class="card border-light mb-3">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <div class="d-flex justify-content-center">
-            <img src="/src/images/white desk.jpg" class="img-fluid rounded-start mx-auto" alt="desk setup" title="desk">
-          </div>
-        </div>
-
-        <div class="col-md-8">
-          <div class="card-body">
-            <h3 class="card-title">Join the Her Level Up Challenge!</h3>
-
-            <p class="card-text">The Her Level Up Challenge is a program designed to help you establish new,
-              healthy
-              habits and stay motivated and accountable along the way. By following 7 simple tasks over the next 21
-              days.
-              Here's what you can expect:</p>
-            <ul class="listOfSignUp">
-              <li>Habit Tracking: You will track your daily habits over the next 21 days to help you establish new,
-                healthy
-                habits.</li>
-              <li>Affirmations and Devotion Section: The website includes affirmations and a Devotion section to help
-                you
-                stay inspired.</li>
-              <li>Community: You will join a community of like-minded women who are also participating in the challenge.
-                Use
-                the hashtag #HerLevelUp to connect with others.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-    <br>
     <div id="formContainer" class="signForm">
-
       <h2>Sign up now!</h2>
       <p>Get inspired and stay on track with your journey. No spam, just positive vibes!</p>
       <form name="contact" netlify>
         <p>
           <label for="name">Name</label>
-
-
           <input type="text" id="name" name="name" />
-
-
         </p>
-
-
         <p>
-
-
           <label for="email">Email</label>
-
-
           <input type="email" id="email" name="email" />
-
-
         </p>
-
-
       </form>
-
-
       <button type="submit">Join</button>
     </div>
   </div>
+
+  <div class="cloud-container">
+    <img class="cloud-1" src="/src/images/cloud.png" alt="pink cloud 1">
+    <img class="cloud-2" src="/src/images/pink-cloud.png" alt="pink cloud 2">
+    <img class="cloud-3" src="/src/images/cloud.png" alt="pink cloud 3">
+    <img class="cloud-4" src="/src/images/pink-cloud.png" alt="pink cloud 4">
+    <img class="cloud-5" src="/src/images/pink-cloud.png" alt="pink cloud 5">
+    <img class="cloud-6" src="/src/images/pink-cloud.png" alt="pink cloud 6">
+
   </div>
 
-  <br>
-  <br>
   </div>
 
 </body>
