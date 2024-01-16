@@ -104,9 +104,6 @@ li {
 		font-size: 15px;
 	}
 
-	.devotion {
-		font-size: 15px;
-	}
 
 	p {
 		font-size: 15px;
@@ -120,19 +117,7 @@ li {
 	padding: 20px;
 }
 
-.devotion {
-	margin-top: 10px;
-	border: var(--primary-color) double 5px;
-	padding: 20px;
-	line-height: 1.5;
-}
 
-.verse {
-	border: var(--primary-color) inset 5px;
-	padding: 20px;
-	text-align: center;
-	font-weight: 500;
-}
 
 .listOfAffirm {
 	list-style: none;
@@ -359,36 +344,9 @@ a:link {
 	text-decoration: none;
 }
 
-a:not(.navbar-nav a) {
-	animation: bounce 0.5s infinite alternate;
-}
 
-@keyframes bounce {
-	from {
-		transform: translateY(0);
-	}
 
-	to {
-		transform: translateY(-10px);
-	}
-}
 
-.carousel-item {
-	height: 400px;
-	width: auto;
-}
-
-.carousel-item>img {
-	object-fit: cover;
-	height: 100%;
-	width: 100%;
-}
-
-.carousel-inner {
-	border: var(--primary-color) double 5px;
-	padding: 20px;
-
-}
 
 #formContainer {
 	background-color: #f5e9ec;

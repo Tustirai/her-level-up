@@ -73,7 +73,41 @@ function showChallenge(day) {
 	}`;
 }
 
-getAffirmation();
+function getCheckList() {
+	var dailyTask = document.getElementById("dailyToDo");
+
+	// Insert the HTML content
+	dailyTask.innerHTML = `
+  <fieldset>
+    <div class="checklist">
+      <input type="checkbox" id="devotion" name="devotion" />
+      <label for="devotion">Read a devotion</label>
+    </div>
+    <div class="checklist">
+      <input type="checkbox" id="affirmations" name="affirmations" />
+      <label for="affirmations">Speak affirmations</label>
+    </div>
+    <div class="checklist">
+      <input type="checkbox" id="selfcare" name="selfcare" />
+      <label for="selfcare">Apply make up</label>
+    </div>
+    <div class="checklist">
+      <input type="checkbox" id="water" name="water" />
+      <label for="water">Drink 1.5 Liters of water</label>
+    </div>
+    <div class="checklist">
+      <input type="checkbox" id="workout" name="workout" />
+      <label for="workout">Workout</label>
+    </div>
+    <div class="checklist">
+      <input type="checkbox" id="journal" name="journal" />
+      <label for="journal">Journal</label>
+    </div>
+  </fieldset>
+  <div class="hero-overlay"></div>
+`;
+}
+
 const tweetButton = document.getElementById("tweetThisAffirm");
 
 tweetButton.addEventListener("click", () => {
@@ -120,13 +154,21 @@ checkboxes.forEach((checkbox) => {
 	});
 });
 const images = [
-	"src/images/selfCare.jpg",
-	"src/images/Pretty flatlay.jpg",
-	"src/images/white desk.jpg",
-	"src/images/magic pursit.jpg",
-	"src/images/desktop.jpg",
-	"src/images/just live.jpg",
+	"src/images/woman-8396545.jpg",
+	"src/images/woman-8394959.jpg",
+	"src/images/woman-8394963.jpg",
+	"src/images/woman-8394964.jpg",
+	"src/images/woman-8394965.jpg",
+	"src/images/woman-8396543.jpg",
+	"src/images/woman-8396544.jpg",
+	"src/images/woman-8396545.jpg",
+	"src/images/woman-8396547.jpg",
+	"src/images/woman-8396552.jpg",
 ];
 const randomIndex = Math.floor(Math.random() * images.length);
 const img = document.querySelector("#butterflyImg");
 img.src = images[randomIndex];
+
+getAffirmation();
+
+getCheckList();
