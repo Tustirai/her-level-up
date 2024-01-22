@@ -93,7 +93,7 @@ function getCheckList() {
     </div>
     <div class="checklist">
       <input type="checkbox" id="water" name="water" />
-      <label for="water">Drink 1.5 Liters of water</label>
+      <label for="water">Drink 1.5 Litres of water</label>
     </div>
     <div class="checklist">
       <input type="checkbox" id="workout" name="workout" />
@@ -137,6 +137,8 @@ heartIcon.addEventListener("click", () => {
 	}, 500);
 });
 
+getCheckList();
+
 const checkboxes = document.querySelectorAll('input[type="checkbox"]');
 const allChecked = () => {
 	for (let i = 0; i < checkboxes.length; i++) {
@@ -170,5 +172,3 @@ const img = document.querySelector("#butterflyImg");
 img.src = images[randomIndex];
 
 getAffirmation();
-
-getCheckList();
