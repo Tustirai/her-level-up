@@ -87,22 +87,24 @@ function getCheckList() {
       <input type="checkbox" id="affirmations" name="affirmations" />
       <label for="affirmations">Speak affirmations</label>
     </div>
-    <div class="checklist">
-      <input type="checkbox" id="selfcare" name="selfcare" />
-      <label for="selfcare">Apply make up</label>
+	 <div class="checklist">
+      <input type="checkbox" id="journal" name="journal" />
+      <label for="journal">Journal</label>
     </div>
-    <div class="checklist">
+	<div class="checklist">
       <input type="checkbox" id="water" name="water" />
       <label for="water">Drink 1.5 Litres of water</label>
     </div>
-    <div class="checklist">
+	  <div class="checklist">
       <input type="checkbox" id="workout" name="workout" />
       <label for="workout">Workout</label>
     </div>
     <div class="checklist">
-      <input type="checkbox" id="journal" name="journal" />
-      <label for="journal">Journal</label>
+      <input type="checkbox" id="selfcare" name="selfcare" />
+      <label for="selfcare">Apply make up (or skincare)</label>
     </div>
+    
+   
   </fieldset>
   <div class="hero-overlay"></div>
 `;
